@@ -1,0 +1,145 @@
+/* Use el map con los colores porque no sabia donde mas ponerlo*/
+/*Fuente principal del proyecto*/
+/*Color principal*/
+/*Color principal (alternativo)*/
+/*Color secundario*/
+/*Colores oscuros permitidos con la marca*/
+/* Use el map con los colores porque no sabia donde mas ponerlo*/
+/*Fuente principal del proyecto*/
+/*Color principal*/
+/*Color principal (alternativo)*/
+/*Color secundario*/
+/*Colores oscuros permitidos con la marca*/
+/*Mixing para agregar los colores del menu de fondo y texto*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Arima", cursive;
+  vertical-align: top;
+}
+
+h1 {
+  color: #444;
+}
+
+.list-reset {
+  list-style: none;
+  padding-left: 0;
+}
+
+.menu {
+  background: rgb(241, 173, 186);
+  color: #f6f1e8;
+}
+.menu a {
+  background: rgb(241, 173, 186);
+  color: #f6f1e8;
+}
+.menu a:hover {
+  background: rgb(241, 173, 186);
+  color: #f6f1e8;
+  text-decoration: underline;
+}
+.menu a.nav-link.active {
+  font-style: bold;
+  color: #f6f1e8;
+}
+
+.color-rosa {
+  color: rgb(241, 173, 186);
+}
+
+.color-manteca {
+  color: #f6f1e8;
+}
+
+.color-gris {
+  color: darkgray;
+}
+
+.color-negro {
+  color: #444;
+}
+
+/* FOOTER */
+.footer-container {
+  background: #f6f1e8;
+  color: darkgray;
+  width: 100%;
+  height: 100%;
+}
+
+/* CAROUSEL */
+.carousel-principal {
+  min-height: 400px;
+}
+
+.carousel-item {
+  height: 400px;
+}
+
+.nougat-carousel-caption {
+  background-color: rgba(68, 68, 68, 0.2);
+  color: #f6f1e8;
+}
+.nougat-carousel-caption h1 {
+  color: #f6f1e8;
+}
+
+@media (max-width: 767.98px) {
+  .nougat-carousel-caption {
+    background-color: rgba(68, 68, 68, 0.7);
+  }
+}
+/*Boton principal*/
+.btn-nougat-primary {
+  background-color: #00ccb1;
+  border: 1px solid #00ccb1;
+  color: #fff;
+}
+.btn-nougat-primary:hover, .btn-nougat-primary:active, .btn-nougat-primary:visited, .btn-nougat-primary:focus, .btn-nougat-primary:active:focus {
+  background-color: #00ccb1;
+  border: 1px solid #00ccb1;
+  color: #fff;
+  text-decoration: underline;
+}
+
+.zoom {
+  transition: transform 0.2s;
+  margin: 0 auto;
+}
+.zoom:hover {
+  transform: scale(1.5);
+}
+
+.card {
+  border: none;
+}
+
+.catalogo-card-header {
+  padding-left: 0;
+  background-color: #fff;
+  color: #00ccb1;
+  border: none;
+}
+
+.accordion-button {
+  color: rgb(241, 173, 186);
+  background-color: #fff;
+  box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+.accordion-button:active, .accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #00ccb1;
+  background-color: #f6f1e8;
+  box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+
+.alert-nougat-tip {
+  background-color: #fff;
+}
+
+/*# sourceMappingURL=estilos.css.map */

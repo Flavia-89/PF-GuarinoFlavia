@@ -1,0 +1,142 @@
+@import 'variables';
+@import 'mixins';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $font-stack;
+    vertical-align: top;
+}
+
+h1 {
+    color: $nougat-color-negro;
+}
+
+.list-reset {
+    list-style: none;
+    padding-left: 0;
+}
+
+.menu {
+    @include menu($nougat-color-secundario, $nougat-color-principal-1);
+
+    a {
+        @include menu($nougat-color-secundario, $nougat-color-principal-1);
+    }
+
+    a:hover {
+        @include menu($nougat-color-secundario, $nougat-color-principal-1);
+        text-decoration: underline;
+    }
+
+    a.nav-link.active {
+        font-style: bold;
+        color:$nougat-color-secundario;
+    }
+}
+
+.color-rosa {
+    color: $nougat-color-principal-1;
+}
+
+.color-manteca {
+    color: $nougat-color-secundario;
+}
+
+.color-gris {
+    color: $nougat-color-gris;
+}
+
+.color-negro {
+    color: $nougat-color-negro;
+}
+ 
+/* FOOTER */
+.footer-container {
+    @include menu($nougat-color-gris, $nougat-color-secundario);
+
+    width: 100%;
+    height: 100%;
+}
+
+
+/* CAROUSEL */
+.carousel-principal {
+    min-height: 400px;
+}
+
+.carousel-item {
+    height: 400px;
+}
+
+.nougat-carousel-caption {
+    background-color: rgba($color: $nougat-color-negro, $alpha: 0.2);
+    color: $nougat-color-secundario;
+
+    & h1 {
+        color: $nougat-color-secundario;
+    }
+}
+
+// En small devices rompe el contraste entre el texto y el fondo. Por eso aplico menos transparencia
+@media (max-width: 767.98px) { 
+    .nougat-carousel-caption {
+        background-color: rgba($color: $nougat-color-negro, $alpha: .7);
+    }
+ }
+
+
+ /*Boton principal*/
+
+.btn-nougat-primary {
+    background-color: $nougat-color-principal-2;
+    border: 1px solid $nougat-color-principal-2;
+    color: $nougat-color-blanco;
+
+    &:hover, &:active, &:visited, &:focus, &:active:focus {
+        background-color: $nougat-color-principal-2;
+        border: 1px solid $nougat-color-principal-2;
+        color: $nougat-color-blanco;
+        text-decoration: underline;
+    }
+}
+
+// Efecto de zoom aplicado en la galeria
+.zoom {
+    transition: transform .2s;
+    margin: 0 auto;
+
+    &:hover {
+        transform: scale(1.5);
+      }
+  }
+  
+.card {border: none;}
+.catalogo-card-header {
+    padding-left:0;
+    background-color: $nougat-color-blanco;
+    color: $nougat-color-principal-2;
+    border: none;
+}
+
+// Accordion es utilizado en las recetas
+.accordion-button {
+    color: $nougat-color-principal-1;
+    background-color: $nougat-color-blanco;
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+
+    &:active, &:focus {
+        box-shadow: none;
+    }
+}
+
+.accordion-button:not(.collapsed) {
+    color: $nougat-color-principal-2;
+    background-color: $nougat-color-secundario;
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+
+.alert-nougat-tip {
+    background-color: $nougat-color-blanco;
+}
